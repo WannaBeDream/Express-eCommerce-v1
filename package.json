@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon --watch backend --exec babel-node backend/server.js"
   },
-  "keywords": [],
+  "keywords": ["express","node","mongoose","dotenv","babel"],
   "author": "",
   "license": "ISC",
   "dependencies": {
