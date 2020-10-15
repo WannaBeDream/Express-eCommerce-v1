@@ -26,4 +26,4 @@ app.get("/api/config/paypal", (req, res) => {
   res.send(config.PAYPAL_CLIENT_ID);
 })
 
-app.listen(3000, () => { console.log("Server started at http://localhost:3000") });
+app.listen(config.PORT, () => { console.log("Server started at http://localhost:3000") });
