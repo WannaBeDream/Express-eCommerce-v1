@@ -13,5 +13,5 @@
 
 ## MongoDB models 
 <div align="center">
-<img src="https://github.com/WannaBeDream/Express-eCommerce-v1/blob/main/dbModels.png" width="300" alt="db models" />
+<img src="https://github.com/WannaBeDream/Express-eCommerce-v1/blob/main/dbModels.png" width="600" alt="db models" />
 </div>
