@@ -1,5 +1,5 @@
 import User from "./../models/userModel";
-import {getToken} from "./../util";
+import {getToken} from "../middlewares/util";
 
 export default {
     createUser: async (req, res) => {
