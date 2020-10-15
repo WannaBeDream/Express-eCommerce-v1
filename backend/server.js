@@ -5,6 +5,7 @@ import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import userRoute from './routes/userRoute';
 import productRoute from './routes/productRoute';
+import orderRoute from './routes/orderRoute';
 
 dotenv.config();
 
@@ -20,6 +21,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use("/api/users", userRoute);
 app.use("/api/products", productRoute);
-
+app.use("/api/orders", orderRoute);
 
 app.listen(3000, () => { console.log("Server started at http://localhost:3000") });
