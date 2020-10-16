@@ -78,6 +78,16 @@ export default {
           res.status(404).send({ msg: 'User Not Found' });
         }
       
-      }
+      },
+
+      deleteUser: async (req, res) => {
+        const deletedUser = await User.findById(req.params.id);
+        if (deletedUser) {
+          await deletedUser.remove();
+          res.send({ message: "User Deleted", deletedUser });
+        } else {
+          res.status(404).send("Error in Deletion.");
+        }
+      },
 
 }
