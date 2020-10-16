@@ -1,9 +1,14 @@
+// npm modules
 import express from 'express';
 import dotenv from 'dotenv';
 import bodyParser from 'body-parser';
-import connectDB from "./db/connect";
-import logger from "./helpers/logger";
+// helpers
+import logger from './helpers/logger';
+import connectDB from './db/connect';
+import swagger from './helpers/swagger';
+// config
 import config from './config/config';
+// routes
 import {userRoute,productRoute,orderRoute} from './routes/index'
 
 dotenv.config();
@@ -11,12 +16,13 @@ dotenv.config();
 connectDB()
 
 const app = express();
-logger(app)
+logger(app)  // TODO
+swagger(app) // TODO
 app.use(bodyParser.json());
 app.use("/api/users", userRoute);
 app.use("/api/products", productRoute);
 app.use("/api/orders", orderRoute);
-app.get("/api/config/paypal", (req, res) => {
+app.get("/api/config/paypal", (req, res) => {  // TODO
   res.send(config.PAYPAL_CLIENT_ID);
 })
 

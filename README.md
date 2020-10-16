@@ -1,8 +1,8 @@
-# ExpressJS store with MongoDB [2020]
+# ExpressJS store with MongoDB [2020 October]
 
-- Node & Express: Web API, Body Parser, File Upload, JWT
+- Node & Express: Web API, Body Parser, File Upload, JWT, morgan, express-oas-generator
 - MongoDB: Mongoose, Aggregation
-- Development: ESLint, Babel, Git, Github,
+- Development: ESLint, Babel, Git, Github
 
 ## Run Locally
 
@@ -10,6 +10,8 @@
 - cd Express-eCommerce-v1
 - npm install
 - npm start
+- go to <a href="http://localhost:8000/api-docs/">Swagger</a> to check endpoints (TO DO specs)
+
 
 ## MongoDB models 
 <div align="center">

@@ -1,9 +1,9 @@
 import logger from'morgan';
+import fs from "fs";
 
-
-export default (app) => {
-    // app.use(logger('common', {
-    //     stream: fs.createWriteStream('./access.log', {flags: 'a'})
-    // }));
-    app.use(logger('dev'));
+export default async (app) => {
+  await app.use(logger('common', {
+        stream: fs.createWriteStream('./access.log', {flags: 'a'})
+    }));
+    app.use(logger('combined'));
 }
