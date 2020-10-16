@@ -1,8 +1,8 @@
 # ExpressJS store with MongoDB [2020 October]
 
-- <span style="font-weight: bold" >Node & Express</span>: Web API, Body Parser, File Upload, JWT, morgan, express-oas-generator
-- <span style="font-weight: bold" >MongoDB</span>: Mongoose, Aggregation
-- <span style="font-weight: bold" >Development</span>: ESLint, Babel, Git, Github
+- <span style="fontWeight: bold" >Node & Express</span>: Web API, Body Parser, File Upload, JWT, morgan, express-oas-generator
+- <span style="fontWeight: bold" >MongoDB</span>: Mongoose, Aggregation
+- <span style="fontWeight: bold" >Development</span>: ESLint, Babel, Git, Github
 
 ## Run Locally
 
