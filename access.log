@@ -9,3 +9,6 @@
 ::1 - - [16/Oct/2020:11:44:45 +0000] "GET /api/orders/5f886f1c95c9186a43f8b51b HTTP/1.1" 200 475
 ::1 - - [16/Oct/2020:12:08:10 +0000] "POST /api/users/register HTTP/1.1" 200 341
 ::1 - - [16/Oct/2020:12:09:35 +0000] "DELETE /api/users/5f898d2aa665b62c79535c4e HTTP/1.1" 200 153
+::1 - - [16/Oct/2020:12:48:29 +0000] "GET /api/users/ HTTP/1.1" 404 149
+::1 - - [16/Oct/2020:12:49:13 +0000] "GET /api/products/ HTTP/1.1" 200 2
+::1 - - [16/Oct/2020:12:49:21 +0000] "GET /api/orders/ HTTP/1.1" 200 2
