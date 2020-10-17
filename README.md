@@ -17,3 +17,36 @@
 <div align="center">
 <img src="https://github.com/WannaBeDream/Express-eCommerce-v1/blob/main/dbModels.png" width="600" alt="db models" />
 </div>
+
+
+### Implemented endpoints:
+
+#### /api/users
+Path | Method | Description | Middlewares
+---|---|---|---
+/createadmin | GET | CreateAdminAction | none
+/register | POST | SignUpAction | none
+/signin | POST | SignInAction | none
+/:id | PUT | UpdateUserAction | isAuth
+/:id | DELETE | DeleteUserAction | isAuth,isAdmin
+
+#### /api/products
+Path | Method | Description | Middlewares
+---|---|---|---
+/ | GET | GetAllProductsAction | none
+/:id | GET | GetProductAction | none
+/:id | PUT | UpdateProductAction | isAuth,isAdmin
+/:id | DELETE | DeleteProductAction | isAuth,isAdmin
+/ | POST | CreateProductAction | isAuth,isAdmin
+
+#### /api/orders
+Path | Method | Description | Middlewares
+---|---|---|---
+/ | GET | getOrdersByPopulateAction | isAuth
+/mine | GET | getMineOrdersAction | isAuth
+/:id | GET | getOrderAction | isAuth
+/ | POST | CreateOrderAction | isAuth
+/:id/pay | PUT | payOrderAction | isAuth
+/:id | DELETE | DeleteOrderAction | isAuth,isAdmin
+
+
