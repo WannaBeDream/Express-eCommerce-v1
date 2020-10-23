@@ -18,7 +18,7 @@ export default {
             token: getToken(newUser)
           })
         } else {
-          res.status(401).send({ msg: 'Invalid User Data.' });
+          res.status(401).send({ message: 'Invalid User Data.' });
         }
       
       },
@@ -34,7 +34,7 @@ export default {
           const newUser = await user.save();
           res.send(newUser);
         } catch (error) {
-          res.send({ msg: error.message });
+          res.send({ message: error.message });
         }
       },
 
@@ -54,7 +54,7 @@ export default {
           })
       
         } else {
-          res.status(401).send({ msg: 'Invalid Email or Password.' });
+          res.status(401).send({ message: 'Invalid Email or Password.' });
         }
       
       },
@@ -75,7 +75,7 @@ export default {
             token: getToken(updatedUser)
           });
         } else {
-          res.status(404).send({ msg: 'User Not Found' });
+          res.status(404).send({ message: 'User Not Found' });
         }
       
       },

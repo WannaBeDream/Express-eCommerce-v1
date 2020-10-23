@@ -9,8 +9,8 @@ export default async () => {
              useNewUrlParser: true,
              useUnifiedTopology: true,
              useCreateIndex: true
-         }).catch(error => console.log(error.reason));
-    } catch {
+         })
+    } catch(e) {
         console.log(e);
     }
     

@@ -8,7 +8,7 @@ router.get("/", productController.getAllProducts);
 router.get("/:id", productController.getProduct);
 router.put("/:id", isAuth, isAdmin, productController.updateProduct);
 router.delete("/:id", isAuth, isAdmin, productController.deleteProduct);
-router.post("/", isAuth, isAdmin, productController.createProduct)
-
+router.post("/", isAuth, isAdmin, productController.createProduct);
+router.post('/:id/reviews', isAuth, productController.createReview);
 
 export default router; 

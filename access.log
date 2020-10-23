@@ -28,3 +28,7 @@
 ::1 - - [17/Oct/2020:00:22:10 +0000] "GET /api/orders HTTP/1.1" 401 32
 ::1 - - [17/Oct/2020:00:22:19 +0000] "GET /api/orders HTTP/1.1" 401 32
 ::1 - - [17/Oct/2020:00:57:42 +0000] "GET /api/products HTTP/1.1" 304 -
+::1 - - [17/Oct/2020:14:34:06 +0000] "POST /api/orders/ HTTP/1.1" - -
+::1 - - [17/Oct/2020:14:34:16 +0000] "POST /api/products/ HTTP/1.1" 201 235
+::1 - - [17/Oct/2020:14:34:53 +0000] "POST /api/products/ HTTP/1.1" 201 237
+::1 - - [17/Oct/2020:14:35:01 +0000] "GET /api/products/ HTTP/1.1" 200 393

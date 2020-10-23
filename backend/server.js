@@ -9,7 +9,7 @@ import swagger from './helpers/swagger';
 // config
 import config from './config/config';
 // routes
-import {userRoute,productRoute,orderRoute} from './routes/index'
+import {userRoute,productRoute,orderRoute} from './routes/index';
 
 dotenv.config();
 
