@@ -20,7 +20,6 @@ const app = express();
 logger(app)  // TODO
 swagger(app) // TODO
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
 app.use("/api/users", userRoute);
 app.use("/api/products", productRoute);
 app.use("/api/orders", orderRoute);

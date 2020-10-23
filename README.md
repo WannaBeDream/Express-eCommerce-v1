@@ -50,3 +50,9 @@ Path | Method | Description | Middlewares
 /:id | DELETE | DeleteOrderAction | isAuth,isAdmin
 
 
+
+
+## Updates 23.10.20
+- Added multer module and uploader route 
+- Added new routes /uploads and /api/uploads
+- Added new review schema and route createReview
