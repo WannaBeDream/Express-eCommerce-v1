@@ -38,6 +38,7 @@ Path | Method | Description | Middlewares
 /:id | PUT | UpdateProductAction | isAuth,isAdmin
 /:id | DELETE | DeleteProductAction | isAuth,isAdmin
 / | POST | CreateProductAction | isAuth,isAdmin
+/:id/reviews | POST | CreateReview | isAuth
 
 #### /api/orders
 Path | Method | Description | Middlewares
@@ -50,9 +51,15 @@ Path | Method | Description | Middlewares
 /:id | DELETE | DeleteOrderAction | isAuth,isAdmin
 
 
+#### /api/uploads
+Path | Method | Description | Middlewares
+---|---|---|---
+/ | POST | UploadImage | none
+
+
 
 
 ## Updates 23.10.20
-- Added multer module and uploader route 
-- Added new routes /uploads and /api/uploads
+- Added multer module and uploader route (TO DO)
+- Added new routes /uploads and /api/uploads (TO DO)
 - Added new review schema and route createReview
